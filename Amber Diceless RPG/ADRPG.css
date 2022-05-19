@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+:root {
+	--adrpg-fg: black;
+	--adrpg-bg: white;
+}
+
+.sheet-darkmode {
+	--adrpg-fg: white;
+	--adrpg-bg: #1f1f1f;
+}
+
+.charsheet {
+	font-family: "Comfortaa", sans-serif;
+	font-size: 12px;
+	color: var(--adrpg-fg);
+	background-color: var(--adrpg-bg);
+}
+.charsheet button.colorized, .charsheet input, .charsheet select, .charsheet textarea {
+	color: var(--adrpg-fg);
+	background-color: var(--adrpg-bg);
+}
+.charsheet input[type=text], .charsheet input[type=number] {
+	border: none;
+}
+.charsheet input[type=text]:hover, .charsheet input[type=number]:hover {
+	border-bottom: 1px solid var(--adrpg-fg);
+}
+.charsheet .columns {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.charsheet .columns .narrow {
+	margin-right: 12px;
+}
+.charsheet .columns .header {
+	font-size: 18px;
+	font-family: "Cinzel", serif;
+	margin-top: 6px;
+}

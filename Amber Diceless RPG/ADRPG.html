@@ -1,0 +1,90 @@
+
+<div class="wrapper">
+  <div class="topline">
+    <input type="text" name="attr_character_name"/>
+  </div>
+  <div class="columns">
+    <div class="narrow">
+      <!-- Attributes-->
+      <div class="stats">
+        <div class="stat">
+          <div class="header">Psyche:
+            <input type="hidden" name="attr_rank_psyche" value="Amber"/><span class="rank" name="attr_rank_psyche"></span>
+          </div>
+          <div class="points">
+            <input type="hidden" name="attr_pts_psyche" value="0"/><span name="attr_pts_psyche"></span>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="header">Strength:
+            <input type="hidden" name="attr_rank_strength" value="Amber"/><span class="rank" name="attr_rank_strength"></span>
+          </div>
+          <div class="points">
+            <input type="hidden" name="attr_pts_strength" value="0"/><span name="attr_pts_strength"></span>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="header">Endurance:
+            <input type="hidden" name="attr_rank_endurance" value="Amber"/><span class="rank" name="attr_rank_endurance"></span>
+          </div>
+          <div class="points">
+            <input type="hidden" name="attr_pts_endurance" value="0"/><span name="attr_pts_endurance"></span>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="header">Warfare:
+            <input type="hidden" name="attr_rank_warfare" value="Amber"/><span class="rank" name="attr_rank_warfare"></span>
+          </div>
+          <div class="points">
+            <input type="hidden" name="attr_pts_warfare" value="0"/><span name="attr_pts_warfare"></span>
+          </div>
+        </div>
+      </div>
+      <!-- Stuff-->
+      <div class="stuff">
+        <div class="header">Stuff</div>
+        <input type="number" name="attr_stuff"/>
+      </div>
+      <!-- Player Contributions-->
+      <div class="contributions">
+        <div class="header">Contributions</div>
+        <fieldset class="repeating_contribs"></fieldset>
+      </div>
+      <div class="total">
+        <div class="header">Points:
+          <input type="hidden" name="attr_pts_total" value="0"/><span name="attr_pts_total"></span>
+        </div>
+        <div class="header">
+           Spent:
+          <input type="hidden" name="attr_pts_spent" value="0"/><span name="attr_pts_spent"></span>
+        </div>
+        <div class="header">
+           Remaining: 
+          <input type="hidden" name="attr_pts_remain" value="0"/><span name="attr_pts_remain"></span>
+        </div>
+      </div>
+    </div>
+    <div class="wide">
+      <!-- Powers-->
+      <div class="powers">
+        <div class="header">Powers</div>
+        <fieldset class="repeating_powers"></fieldset>
+      </div>
+      <!-- Artifacts & Creatures-->
+      <div class="artifacts">
+        <div class="header">Artifacts & Creatures</div>
+        <fieldset class="repeating_artifacts"></fieldset>
+      </div>
+      <!-- Personal Shadows-->
+      <div class="shadows">
+        <div class="header">Personal Shadows</div>
+        <fieldset class="repeating_shadows"></fieldset>
+      </div>
+      <!-- Allies-->
+      <div class="allies">
+        <div class="header">Allies</div>
+        <fieldset class="repeating_allies"></fieldset>
+      </div>
+    </div>
+  </div>
+</div>

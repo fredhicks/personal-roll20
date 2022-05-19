@@ -1,0 +1,63 @@
+//- Mixins
+mixin attribute(atname)
+	- 
+		var atl = atname.toLowerCase();
+	.stat
+		.header
+			| #{atname}:
+			input(type='hidden' name='attr_rank_' + atl value="Amber")
+			span.rank(name='attr_rank_' + atl)
+		.points
+			input(type='hidden' name='attr_pts_' + atl value=0)
+			span(name='attr_pts_' + atl)
+
+.wrapper
+	.topline
+		input(type='text' name='attr_character_name')
+	.columns
+		.narrow
+			// Attributes
+			.stats
+				-
+					var atts = [ 'Psyche', 'Strength', 'Endurance', 'Warfare' ];
+				each att in atts
+					+attribute(att)
+			// Stuff
+			.stuff
+				.header Stuff
+				input(type='number' name="attr_stuff")
+			// Player Contributions
+			.contributions
+				.header Contributions
+				fieldset.repeating_contribs
+			.total
+				.header
+					| Points:
+					input(type='hidden' name='attr_pts_total' value=0)
+					span(name='attr_pts_total')
+				.header 
+					| Spent:
+					input(type='hidden' name='attr_pts_spent' value=0)
+					span(name='attr_pts_spent')
+				.header 
+					| Remaining: 
+					input(type='hidden' name='attr_pts_remain' value=0)
+					span(name='attr_pts_remain')
+				
+		.wide
+			// Powers
+			.powers
+				.header Powers
+				fieldset.repeating_powers
+			// Artifacts & Creatures
+			.artifacts
+				.header Artifacts & Creatures
+				fieldset.repeating_artifacts
+			// Personal Shadows
+			.shadows
+				.header Personal Shadows
+				fieldset.repeating_shadows
+			// Allies
+			.allies
+				.header Allies
+				fieldset.repeating_allies

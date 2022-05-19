@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap')
+
+:root
+	--adrpg-fg: black
+	--adrpg-bg: white
+
+.sheet-darkmode
+	--adrpg-fg: white
+	--adrpg-bg: #1f1f1f
+
+.charsheet
+	font-family: 'Comfortaa', sans-serif
+	font-size: 12px
+	color: var(--adrpg-fg)
+	background-color: var(--adrpg-bg)
+	button.colorized, input, select, textarea
+		color: var(--adrpg-fg)
+		background-color: var(--adrpg-bg)
+	input[type=text], input[type=number]
+		border: none
+		&:hover
+			border-bottom: 1px solid var(--adrpg-fg)
+	.columns
+		display: flex
+		flex-direction: row
+		.narrow
+			margin-right: 12px
+		.header
+			font-size: 18px
+			font-family: 'Cinzel', serif
+			margin-top: 6px
